@@ -11,5 +11,178 @@ What is Data Engineering?
   A data engineer manages the data engineering lifecycle, beginning with getting data from source systems and ending with serving data (use cases, analysis, machine learning).
 
 Data Engineering Lifecycle
-  The stages of the data engineering lifecycle are as follows:
-Generation --> Storage --> Ingestion --> Transformation --> Serving
+The stages of the data engineering lifecycle are as follows: Generation --> Storage --> Ingestion --> Transformation --> Serving
+Unsercurrents (critical ideas across the entire lifecycle): Security, Data Management, DataOps, Data Architecture, Orchestration, Software Engineering
+
+Evolution of Data Engineer
+  What's old is new again:
+1970s  : data warehousing 
+1980s  : business data warehouse
+1990s  : Bill Inmon officially coining the term data warehouse. Internet mainstream creating whole new generation (AOL, Yahoo, Amazon) with severs, databases, and storage to support them.
+
+Engineers at IBM developed Structured Query Language (SQL) for Oracle. --> data system grew, businesses needed dedicated tools and data pipelines for reporting and business intelligence
+Ralph Kimball and Inmon --> developed data modeling techniques and approaches
+Data warehousing with new massively parallel processing (MPP) databases --> use multiple processors to crunch large amounts of data coming on the market
+BI engineer, ETL developer and data warehouse engineer --> addressed the various needs of the data warehouse
+Data warehouse and BI engineering were a precursor to today’s data engineering and still play a central role in the discipline.
+2000s  : As the internet mainstream website based pushing database and data warehouse to their limit, and the system buckled, update approaches were needed to handle data growth.
+The new generation of the system must be---cost-effective, scalable, available, and reliable.
+Explosion of data, commodity hardware (severs, RAM, disks, and flash drives) --> became cheap and ubiquitous --> these innovations started decentralizing the traditional monolithic services
+The "big data" era had begun.
+
+2003  : Google --> Goofle File System
+2004  : MapReduce, an ultra-scalable data-processing paradigm
+2006  : Yahoo --> Apache Hadoop
+As companies of all sizes and types saw their data grow into many terabytes and even petabytes, the era of the big data engineer was born.
+
+Amazon --> Amazon Elastic Compute Cloud (EC2) as computing environments, Amazon Simple Storage Service (S3) as infinitely scalable storage systems, Amazon DynamoDB as highly scalable NoSQL databaes, and many other core data building blocks.
+Amazon offer these services for internal and external consumption through Amazon Web Services (AWS) --> the first popular public cloud --> virtualizing ad reselling vast pools of commodity hardware
+Instead of purchasing hardware for data center -- developers could simply rent compute and storage from AWS.
+
+Other ublic clouds soon follow --> Google Cloud, Microsoft Azure, and DigitalOcean.
+
+The early big data tools and public cloud laid the foundation for today’s data ecosystem. 
+The modern data landscape—and data engineering as we know it now—would not exist without these innovations.
+
+2000s and 2010s: Big Data Engineering
+Hadoop ecosystem --> matured and spread to Silicon Valley, any business had access to the same data tools used by the top tech 
+Another revolution --> big 'real-time' data
+Enggineers could choose --> Hadoop, Apache Pig, Apache Hive, Dremel, Apache HBase, Apache Storm, Apache Cassandra, Apache Spark, Presto and other
+The explosion of data tools in the late 2000s and 2010s ushered in the big data engineer. To effectively use these tools and techniques—namely, the Hadoop ecosystem including Hadoop, YARN, Hadoop Distributed File System (HDFS) and MapReduce
+
+Big data quickly became a victim of its own success --> because of the immense hype of "big data", its common to see companies using big data tools for small data problems.
+Dan Ariely tweeted, “Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it.”
+
+Open source developers, clouds, and third parties started looking for ways to abstract, simplify, and make big data available without the high administrative overhead and cost of managing their clusters, and installing, configuring, and upgrading their open source code. 
+The term big data is essentially a relic to describe a particular time and approach to handling large amounts of data.
+
+Big data engineers are now simply data engineers.
+
+2020s  : Engineering for the data lifecycle
+Data engineering role is evolving rapidly --> Hadoop, Spark, or Informatica moving toward ecentralized, modularized, managed, and highly abstracted tools
+While data engineers maintain skills in low-level data programming and use these as required, they increasingly
+find their role focused on things higher in the value chain: security, data management, DataOps, data architecture, orchestration, and general data lifecycle management
+
+Data engineers are now conversant in acronyms such as CCPA and GDPR; as they engineer pipelines, they concern themselves
+with privacy, anonymization, data garbage collection, and compliance with regulations.
+
+We view the present as a golden age of data lifecycle management. 
+Data engineers managing the data engineering lifecycle have better tools and techniques than ever before
+
+Data Engineering and Data Science
+
+We believe data engineering is separate from data science and analytics.
+They complement each other, but they are distinctly different.
+
+In an ideal world, data scientists should spend more than 90% of their time focused on the top layers of the
+pyramid: analytics, experimentation, and ML. When data engineers focus
+on these bottom parts of the hierarchy, they build a solid foundation for data
+scientists to succeed.
+
+With data science driving advanced analytics and ML, data engineering
+straddles the divide between getting data and getting value from data
+
+The fundamental skill set of data engineer:
+  the understanding to evaluate data tools and how they fit together accross the data engineering lifecyle
+  hoe data is produce in source systems and how analyst and data scientist will consume and create value after processig and curating data
+  juggles a lot of complex moving parts and must constantly optimize along the axes of cost, agility, scalability, simplicity, reuse, and interoperability
+
+Nowadays, modern data tools --> considerably abstract and simplify workflows --> data engineers focused on balancing the simplest and most cost-effective, best-of-breed services that deliver value to the business
+The data engineer is also expected to create agile data architectures that evolve as new trends emerge.
+
+DO NOT DO of data engineers (typically):
+- directly build ML models
+- create reports or dashboars
+- perform data analysis
+- build key performance indicators
+- develop software app
+A data engineer should have a good functioning understanding of these areas to serve stakeholders best.
+
+===============================================================
+Data Maturity
+  the progression toward higher data utilization, capabilities, and integration across the organization.
+But early stage startup can have greater data maturity than 100 year old company with annuals revenues in the billion.
+
+Data maturity models version --> Data Management Maturity (DMM) and others.
+
+3 stages of our data maturity model:
+1. Starting with data
+2. Scaling with data
+3. Leading with data
+
+===============================================================
+The Background and Skills of a Data Engineer
+
+People entering data engineering arrive with varying backgrounds in
+education, career, and skill set. Everyone entering the field should expect to
+invest a significant amount of time in self-study. Reading this book is a
+good starting point; one of the primary goals of this book is to give you a
+foundation for the knowledge and skills we think are necessary to succeed
+as a data engineer.
+
+Despite the lack of a formalized path, a requisite body of knowledge exists
+that we believe a data engineer should know to be successful. By definition,
+a data engineer must understand both data and technology. This requires a
+good understanding of software engineering, DataOps, and data architecture.
+
+Zooming out, a data engineer must also understand the requirements of data
+consumers (data analysts and data scientists) and the broader implications
+of data across the organization. Data engineering is a holistic practice; the
+best data engineers view their responsibilities through business and
+technical lenses.
+
+===============================================================
+Business Responsibilities
+===============================================================
+Know how to communicate with nontechnical and technical people.
+  establish rapport and trust with people across the organization, who reports whom,
+  how people interact, which silos exist
+Understand how to scope and gather business and product requirements.
+  how to build and ensure stakeholders agree with your assessment, develop sense how data and tech impact the business
+Understand the cultural foundations of Agile, DevOps, and DataOps.
+  they are cultural, and requiring buy-in across the organization
+Control costs.
+  keep cost low while providing outsized value and monitor costs to avoid suprises.
+Learn continuously.
+  Stay abreast of the field and learn how to learn.
+
+Knowing how to navigate an organization, scope and gather requirements, control costs, and
+continuously learn will set you apart from the data engineers who rely
+solely on their technical abilities to carry their career.
+
+===============================================================
+Technical Responsibilities
+===============================================================
+the primary languages of data engineering are :
+  SQL
+  Python
+  Java Virtual Machine (JVM) language (usually Java or Scala)
+  bash
+
+Data engineers may also need to develop proficiency in secondary
+programming languages, including R, JavaScript, Go, Rust, C/C++, C#, and
+Julia.
+
+===============================================================
+
+===============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================
+
+===============================================================
