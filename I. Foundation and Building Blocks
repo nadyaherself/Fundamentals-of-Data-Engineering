@@ -1,0 +1,15 @@
+Foundation and Building Blocks
+
+- Data engineering is one of the hottest fields in data and technology.
+- It builds the foundation for data science and analytics in production.
+
+- How the field was born? How is the evolution? The skills that must have of good data engineers and with whom they work?
+
+What is Data Engineering?
+  Data engineering is the development, implementation, and maintenance of systems and processes that take in raw data and produce high-quality consistent information that supports downstream use cases, such as analysis and machine learning.
+  The intersection of security, data management, DataOps, data architecture, orchestration, and software engineering.
+  A data engineer manages the data engineering lifecycle, beginning with getting data from source systems and ending with serving data (use cases, analysis, machine learning).
+
+Data Engineering Lifecycle
+  The stages of the data engineering lifecycle are as follows:
+Generation --> Storage --> Ingestion --> Transformation --> Serving
